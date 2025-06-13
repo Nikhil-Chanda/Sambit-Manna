@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate Monitor"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_marginTop="32dp"
+       />
+
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate: -- bpm"
+        android:textSize="22sp"
+        android:layout_below="@id/textureView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:id="@+id/tv_spo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpO₂: --%"
+        android:textSize="18sp"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="560dp"
+        android:text="Body Temp: --°C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_hrv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="600dp"
+        android:text="HRV: -- ms"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_rr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RR: -- bpm"
+        android:textSize="18sp"
+        android:layout_marginTop="650dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Measurement"
+        android:layout_below="@id/tv_heart_rate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+</RelativeLayout>
